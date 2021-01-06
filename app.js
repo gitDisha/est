@@ -11,7 +11,7 @@ app.set("view engine", "ejs");
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(express.static("public"));
 
-mongoose.connect("mongodb+srv://admin-disha:Test123 @cluster0.u90vf.mongodb.net/todolistDB?retryWrites=true&w=majority", {
+mongoose.connect("mongodb+srv://admin-disha:Test123@cluster0.u90vf.mongodb.net/todolistDB?retryWrites=true&w=majority", {
   useNewUrlParser: true,
   useUnifiedTopology: true,
   useFindAndModify: false,
@@ -86,7 +86,7 @@ app.post("/", function (req, res) {
     //   console.log(foundList);
     //   foundList.items.push(item);
     //   foundList.save();
-    //   res.redirect("/" + listName);
+    //   res.redirect("/" + listName); 
     // });
   }
 });
